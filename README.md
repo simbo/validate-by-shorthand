@@ -1,17 +1,17 @@
-validate-anything
-=================
+validate-by-shorthand
+=====================
 
-  > This library offers a wide range of validation tests, easyily accessible 
-  > via shortcodes.
+  > This library offers a wide range of validation tests, easily accessible 
+  > via shorthands.
 
-[![npm Package Version](https://img.shields.io/npm/v/validate-anything.svg?style=flat-square)](https://www.npmjs.com/package/validate-anything)
+[![npm Package Version](https://img.shields.io/npm/v/validate-by-shorthand.svg?style=flat-square)](https://www.npmjs.com/package/validate-by-shorthand)
 [![MIT License](http://img.shields.io/:license-mit-blue.svg?style=flat-square)](http://simbo.mit-license.org)
-[![Travis Build Status](https://img.shields.io/travis/simbo/validate-anything/master.svg?style=flat-square)](https://travis-ci.org/simbo/validate-anything)
+[![Travis Build Status](https://img.shields.io/travis/simbo/validate-by-shorthand/master.svg?style=flat-square)](https://travis-ci.org/simbo/validate-by-shorthand)
 
-[![Dependencies Status](https://img.shields.io/david/simbo/validate-anything.svg?style=flat-square)](https://david-dm.org/simbo/validate-anything)
-[![devDependencies Status](https://img.shields.io/david/dev/simbo/validate-anything.svg?style=flat-square)](https://david-dm.org/simbo/validate-anything#info=devDependencies)
-[![Code Climate GPA](https://img.shields.io/codeclimate/github/simbo/validate-anything.svg?style=flat-square)](https://codeclimate.com/github/simbo/validate-anything)
-[![Code Climate Test Coverage](https://img.shields.io/codeclimate/coverage/github/simbo/validate-anything.svg?style=flat-square)](https://codeclimate.com/github/simbo/validate-anything)
+[![Dependencies Status](https://img.shields.io/david/simbo/validate-by-shorthand.svg?style=flat-square)](https://david-dm.org/simbo/validate-by-shorthand)
+[![devDependencies Status](https://img.shields.io/david/dev/simbo/validate-by-shorthand.svg?style=flat-square)](https://david-dm.org/simbo/validate-by-shorthand#info=devDependencies)
+[![Code Climate GPA](https://img.shields.io/codeclimate/github/simbo/validate-by-shorthand.svg?style=flat-square)](https://codeclimate.com/github/simbo/validate-by-shorthand)
+[![Code Climate Test Coverage](https://img.shields.io/codeclimate/coverage/github/simbo/validate-by-shorthand.svg?style=flat-square)](https://codeclimate.com/github/simbo/validate-by-shorthand)
 
 ---
 
@@ -19,9 +19,9 @@ validate-anything
 ## Usage
 
 ``` javascript
-var validate = require('validate-anything');
+var validate = require('validate-by-shorthand');
 
-// validate using shortcodes
+// validate using shorthands
 validate('string!empty', 'foo'); // true
 validate('string!empty', ''); // false
 validate('number>0', 5); // true
@@ -40,7 +40,7 @@ var test = function(v) {
 validate(test, 2); // true
 validate(test, 5); // false
 
-// validate using an array of shortcodes, regexps and/or functions
+// validate using an array of shorthands, regexps and/or functions
 // returning true if any test succeeds
 var arr = ['number<0', test, /^[A-Z]$/];
 validate(arr, -2); // true
@@ -52,7 +52,7 @@ validate(arr, 'a'); // true
 ```
 
 
-## Shortcodes
+## Shorthands
 
 type tests supported by [`util.is*`](https://nodejs.org/api/util.html) functions:
   - `array`

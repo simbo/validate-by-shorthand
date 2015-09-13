@@ -1,6 +1,6 @@
 {
-  "name": "validate-anything",
-  "description": "This library offers a wide range of validation tests, easyily accessible via shortcodes.",
+  "name": "validate-by-shorthand",
+  "description": "This library offers a wide range of validation tests, easily accessible via shorthands.",
   "keywords": [
     "type",
     "test",
@@ -12,9 +12,9 @@
   "version": "0.1.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/simbo/validate-anything.git"
+    "url": "git://github.com/simbo/validate-by-shorthand.git"
   },
-  "bugs": "https://github.com/simbo/validate-anything/issues",
+  "bugs": "https://github.com/simbo/validate-by-shorthand/issues",
   "main": "index.js",
   "files": [
     "lib/",
