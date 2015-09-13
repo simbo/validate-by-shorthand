@@ -21,7 +21,7 @@ validate-anything
 ``` javascript
 var validate = require('validate-anything');
 
-// validate using shorthands
+// validate using shortcodes
 validate('string!empty', 'foo'); // true
 validate('string!empty', ''); // false
 validate('number>0', 5); // true
@@ -40,7 +40,7 @@ var test = function(v) {
 validate(test, 2); // true
 validate(test, 5); // false
 
-// validate using an array of shorthands, regexps and/or functions
+// validate using an array of shortcodes, regexps and/or functions
 // returning true if any test succeeds
 var arr = ['number<0', test, /^[A-Z]$/];
 validate(arr, -2); // true
@@ -52,7 +52,7 @@ validate(arr, 'a'); // true
 ```
 
 
-## Shorthand tests
+## Shortcodes
 
 type tests supported by [`util.is*`](https://nodejs.org/api/util.html) functions:
   - `array`
