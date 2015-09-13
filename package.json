@@ -1,0 +1,46 @@
+{
+  "name": "validate-anything",
+  "description": "This library offers a wide range of validation tests, easyily accessible via shortcodes.",
+  "keywords": [
+    "type",
+    "test",
+    "validate",
+    "shorthands"
+  ],
+  "author": "Simon Lepel <simbo@simbo.de> (http://simbo.de)",
+  "license": "MIT",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/simbo/validate-anything.git"
+  },
+  "bugs": "https://github.com/simbo/validate-anything/issues",
+  "main": "index.js",
+  "files": [
+    "lib/",
+    "index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "os": [
+    "darwin",
+    "linux"
+  ],
+  "engines": {
+    "node": ">=0.12.0"
+  },
+  "scripts": {
+    "test": "mocha -R spec",
+    "lint": "jshint ./lib/*.js & jscs ./lib/*.js",
+    "cover": "istanbul cover ./node_modules/.bin/_mocha -- -R spec",
+    "watch": "mocha -R spec -w",
+    "codeclimate": "codeclimate-test-reporter < coverage/lcov.info"
+  },
+  "devDependencies": {
+    "codeclimate-test-reporter": "^0.1.0",
+    "istanbul": "^0.3.19",
+    "jscs": "^2.1.1",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.0"
+  }
+}
